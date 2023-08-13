@@ -1,7 +1,12 @@
+import { GlobalStyles } from "./styles/global-styles";
+import { Footer } from "./components/Footer";
+
 function App() {
   return (
     <>
-      <h1>Meu Portifólio</h1>
+      <GlobalStyles />
+      <p style={{ textAlign: "center" }}>Rodapé</p>
+      <Footer />
     </>
   );
 }
