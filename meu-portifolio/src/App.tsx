@@ -1,11 +1,14 @@
 import { GlobalStyles } from "./styles/global-styles";
 import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <p style={{ textAlign: "center" }}>Rodapé</p>
+      <Header />
+      <p style={{ height: "75vh" }}>Desenvolvimento</p>
+
       <Footer />
     </>
   );
