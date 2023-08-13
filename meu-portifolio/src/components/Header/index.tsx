@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { HeaderStyled } from "./styled";
 import { api } from "../../services/api";
-import { UsersProps } from "./interfaces";
+import { UsersProps } from "../../components/Interfaces/UsersProps";
 
 function Header() {
   const [userData, setUserData] = useState<UsersProps>();
