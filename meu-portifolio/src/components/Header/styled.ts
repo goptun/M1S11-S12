@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeaderStyled = styled.header`
   width: 100%;
@@ -38,4 +39,8 @@ export const HeaderStyled = styled.header`
     list-style: none;
     margin: 0 1em;
   }
+`;
+
+export const LinkStyled = styled(Link)`
+  text-decoration: none;
 `;

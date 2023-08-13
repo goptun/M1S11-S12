@@ -1,13 +1,18 @@
-import { FooterStyled } from "./styled";
+import { FooterStyled, LinkStyled } from "./styled";
+import { pages } from "../../data/pages";
 
 function Footer() {
   return (
     <FooterStyled>
-      <div className="footer" />
+      <div>
+        <div className="footer-border" />
+      </div>
       <ul>
-        <li>Início</li>
-        <li>Portifólio</li>
-        <li>Sobre</li>
+        {pages.map(({ route, description }) => (
+          <li key={description}>
+            <LinkStyled to={route}>{description}</LinkStyled>
+          </li>
+        ))}
       </ul>
       <a href="#top">© 2023 | Matheus Ramos</a>
     </FooterStyled>
