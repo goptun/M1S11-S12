@@ -6,16 +6,22 @@ import { pages } from "../../data/pages";
 
 function Header() {
   const [userData, setUserData] = useState<UsersProps>();
+  const [loading, setLoading] = useState(false);
 
   const load = async () => {
+    setLoading(true);
     const response = await api.get("");
     setUserData(response.data);
+    setLoading(false);
   };
 
   useEffect(() => {
     load();
   }, []);
 
+  if (loading) {
+    return <p>Carregando...</p>;
+  }
   return (
     <HeaderStyled>
       <div>
