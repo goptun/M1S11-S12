@@ -8,7 +8,7 @@ function Home() {
       <Header />
       <HomeStyled>
         <h2>
-          web_<span>developer</span>
+          dev.<span>Full</span>_Stack
         </h2>
       </HomeStyled>
       <SectionStyled>
