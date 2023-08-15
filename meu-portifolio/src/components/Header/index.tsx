@@ -10,7 +10,7 @@ function Header() {
 
   const load = async () => {
     setLoading(true);
-    const response = await api.get("");
+    const response = await api.get("/users/goptun");
     setUserData(response.data);
     setLoading(false);
   };

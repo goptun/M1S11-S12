@@ -1,4 +1,4 @@
 export interface ButtonProps {
   descriptionButton: string;
-  onClick: () => VoidFunction;
+  onClick: () => void;
 }

@@ -6,21 +6,22 @@ export const AboutMeStyled = styled.main`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
+  font-size: 1.5em;
   h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
-    font-size: 2 em;
-    line-height: 1.3;
+    padding: 2rem;
+    font-size: 1.5em;
+    line-height: 1.5;
     letter-spacing: -0.05em;
   }
   h3 {
     text-align: justify;
     line-height: 1.2;
-    letter-spacing: -0.09em;
+    letter-spacing: 0em;
     margin-bottom: 16px;
+    font-size: 1em;
   }
   span {
     color: green;

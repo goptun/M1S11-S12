@@ -32,7 +32,7 @@ export const PortfolioStyled = styled.main`
   }
   img {
     margin-top: 1em;
-    width: 10em;
+    width: 11em;
     height: 6em;
     border-radius: 10px;
   }
