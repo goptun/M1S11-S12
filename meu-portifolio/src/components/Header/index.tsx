@@ -28,16 +28,16 @@ function Header() {
         <LinkStyled to="/">
           <p>{userData && userData.name}</p>
         </LinkStyled>
-        <nav>
-          <ul>
-            {pages.map(({ route, description }) => (
-              <li key={description}>
-                <LinkStyled to={route}>{description}</LinkStyled>
-              </li>
-            ))}
-          </ul>
-        </nav>
       </div>
+      <nav>
+        <ul>
+          {pages.map(({ route, description }) => (
+            <li key={description}>
+              <LinkStyled to={route}>{description}</LinkStyled>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </HeaderStyled>
   );
 }

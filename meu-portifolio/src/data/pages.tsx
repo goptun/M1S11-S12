@@ -5,7 +5,7 @@ const pages = [
   },
   {
     route: "/aboutme",
-    description: "Sobre mim",
+    description: "Sobre",
   },
   {
     route: "/portfolio",

@@ -2,13 +2,15 @@ import { styled } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderStyled = styled.header`
-  width: 100%;
-  height: 0rem;
   position: sticky;
-  display: grid;
-  grid-template-columns: 1fr;
+  top: 0px;
 
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  width: 100%;
+  height: 80px;
+
 
   div {
     display: flex;
@@ -23,22 +25,39 @@ export const HeaderStyled = styled.header`
   }
 
   nav {
-    width: 100%;
-    border: 1px solid #fff;
     display: flex;
-    justify-content: center;
+    align-items: center;
   }
 
   ul {
     display: flex;
-    justify-content: center;
-    margin: 1em;
   }
 
   li {
     list-style: none;
     margin: 0 1em;
   }
+
+  li:hover {
+    color: #fff;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
+  div p:hover {
+    transform: scale(1.03);
+    transition: transform 0.8s;
+  }
+
+  @media (max-width: 480px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
 `;
 
 export const LinkStyled = styled(Link)`

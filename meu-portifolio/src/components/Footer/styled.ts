@@ -9,8 +9,15 @@ export const FooterStyled = styled.footer`
 
   div {
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-border {
+    width: 90%;
     border: 1px solid #fff;
   }
+
   ul {
     display: flex;
     justify-content: center;
@@ -18,8 +25,15 @@ export const FooterStyled = styled.footer`
   }
   li {
     list-style: none;
-    margin: 0 1em;
+    margin: 0 2em;
   }
+
+  li:hover {
+    color: #fff;
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  }
+
   a {
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +42,30 @@ export const FooterStyled = styled.footer`
     text-decoration: none;
     color: #ffff;
     margin: 1em 4em;
+  }
+
+  a:hover {
+    color: #fff;
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  }
+
+  @media (max-width: 590px) {
+    a {
+      font-size: 13px;
+    }
+
+    ul {
+      display: block;
+    }
+
+    li {
+      white-space: nowrap;
+    }
+
+    a {
+      margin: 1em 2em;
+    }
   }
 `;
 
